@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Emptts Demo</title>
+	</head>
+	<h2 align="center">Controllable Emphatic Speech Synthesis based on Forward Attention for Expressive Speech Synthesis</h2>
+	<h2 align="center">Liangqi Liu, Zhiyong Wu, Jia Jia, Helen Meng</h2>
+	<body>
+		<h2>synthesized speech samples</h2>
+		<table style="width:100%">
+		  <tr>
+			<th>idx</th>
+			<th>Text with label</th>
+			<th>base</th>
+			<th>proposed</th> 
+			<th>duration</th>
+			<th>acoustic</th>
+		  </tr>
+		  <tr>
+		  <th>01</th>
+			<th>
+		  <p>我想去{西单}买手机。</p>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/base1/01.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/proposed/01.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/duration/01.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/acoustic/01.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+		  </tr>
+	<tr>
+		  <th>02</th>
+			<th>
+		  <p>我想去西单买{手机}。</p>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/base1/02.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/proposed/02.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/duration/02.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/acoustic/02.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+		  </tr>
+	  <tr>
+		  <th>03</th>
+			<th>
+		  <p>在{上海}，有个小伙子，他每天准时坐着地铁上班。</p>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/base1/03.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/proposed/03.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/duration/03.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/acoustic/03.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+		  </tr>
+	  <tr>
+		  <th>04</th>
+			<th>
+		  <p>在上海，有个{小伙子}，他每天准时坐着地铁上班。</p>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/base1/04.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/proposed/04.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/duration/04.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/acoustic/04.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+		  </tr>
+	  <tr>
+		  <th>05</th>
+			<th>
+		  <p>在上海，有个小伙子，他{每天}准时坐着地铁上班。</p>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/base1/05.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/proposed/05.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/duration/05.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/acoustic/05.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+		  </tr>
+	  <tr>
+		  <th>06</th>
+			<th>
+		  <p>在上海，有个小伙子，他每天{准时}坐着地铁上班。</p>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/base1/06.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/proposed/06.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/duration/06.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/acoustic/06.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+		  </tr>
+	  <tr>
+		  <th>07</th>
+			<th>
+		  <p>在上海，有个小伙子，他每天准时坐着{地铁}上班。</p>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/base1/07.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/proposed/07.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/duration/07.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/acoustic/07.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+		  </tr>
+	  <tr>
+		  <th>08</th>
+			<th>
+		  <p>{孔子}是中国古代伟大的哲学家。</p>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/base1/08.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/proposed/08.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/duration/08.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/acoustic/08.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+		  </tr>
+	  <tr>
+		  <th>09</th>
+			<th>
+		  <p>孔子是中国古代{伟大的}哲学家。</p>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/base1/09.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/proposed/09.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/duration/09.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/acoustic/09.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+		  </tr>
+
+	  <tr>
+		  <th>10</th>
+			<th>
+		  <p>孔子是中国古代伟大的{哲学家}。</p>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/base1/10.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/proposed/10.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/duration/10.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/acoustic/10.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+		  </tr>
+	  <tr>
+		  <th>11</th>
+			<th>
+		  <p>我会的，不过{游泳}对我来说是个挑战。</p>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/base1/11.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/proposed/11.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/duration/11.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/acoustic/11.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+		  </tr>
+	  <tr>
+		  <th>12</th>
+			<th>
+		  <p>我会的，不过游泳对我来说是个{挑战}。</p>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/base1/12.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/proposed/12.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/duration/12.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/acoustic/12.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+		  </tr>
+		</table>
+		<h2>control the strength of emphasis on duration (with yd) and acoustic features (with ya) seperately</h2>
+		<p>index-01:我想去{西单}买手机。</p>
+		<p>index-02:在上海，有个小伙子，他{每天}准时坐着地铁上班。</p>
+		<table style="width:100%">
+		  <tr>
+			<th>index</th>
+			<th>ya=0,yd=0</th>
+			<th>ya=0,yd=0.5</th>
+			<th>ya=0,yd=1</th> 
+		  </tr>
+	  <tr>
+		  <th>01</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/interpolation/0-ya0-yd0.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/interpolation/0-ya0-yd0.5.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/interpolation/0-ya0-yd1.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+		  </tr>
+	  <tr>
+		  <th>02</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/interpolation/1-ya0-yd0.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/interpolation/1-ya0-yd0.5.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/interpolation/1-ya0-yd1.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+		  </tr>
+		</table>
+		<table style="width:100%">
+		  <tr>
+			<th>index</th>
+			<th>ya=0.5,yd=0</th>
+			<th>ya=0.5,yd=0.5</th>
+			<th>ya=0.5,yd=1</th> 
+		  </tr>
+	  <tr>
+		  <th>01</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/interpolation/0-ya0.5-yd0.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/interpolation/0-ya0.5-yd0.5.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/interpolation/0-ya0.5-yd1.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+		  </tr>
+	  <tr>
+	  <tr>
+		  <th>02</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/interpolation/1-ya0.5-yd0.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/interpolation/1-ya0.5-yd0.5.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/interpolation/1-ya0.5-yd1.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+		  </tr>
+		</table>
+		<table style="width:100%">
+		  <tr>
+			<th>index</th>
+			<th>ya=1,yd=0</th>
+			<th>ya=1,yd=0.5</th>
+			<th>ya=1,yd=1</th> 
+		  </tr>
+	  <tr>
+		  <th>01</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/interpolation/0-ya1-yd0.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/interpolation/0-ya1-yd0.5.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/interpolation/0-ya1-yd1.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+		  </tr>
+	  <tr>
+		  <th>02</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/interpolation/1-ya1-yd0.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/interpolation/1-ya1-yd0.5.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls style="width: 200px;">
+					  <source src="./wavs/interpolation/1-ya1-yd1.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+		  </tr>
+		</table>
+
+	</body>
+</html>
